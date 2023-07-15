@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px
+}
+
+.section-me {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    background-color: #000000;
+}
+
+/* Default till here */
+
+
+/* Navbar */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #4f2b11;
+    background: linear-gradient(#4f2b11, transparent);
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); */
+    z-index: 999;
+    position: sticky; /*important to add top and left for sticky*/
+    top: 0; 
+    left: 0;
+    backdrop-filter: blur(7px);
+    /* -webkit-mask: -webkit-linear-gradient(black, transparent 30%, black);
+    -webkit-mask: linear-gradient(black, transparent 30%, black);
+    -webkit-filter: blur(3px);
+    mask: url('#mask-linear');
+    filter: url('#filtre2'); */
+}
+
+/* Defaults of navbar -- to bring the navigation contents in a single row */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* To remove default bullet dots and add spacing, we have to set position = relative in parent class */
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+
+    position: relative;
+}
+
+/* Removing underline and adding color to the navigation links, transition to change color while hovering */
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #b8652e;
+
+    transition: 0.3s ease;
+}
+
+/* So that nav stays highlighted after being clicked */
+#navbar li a:hover,
+#navbar li a.active {
+    color: #e7813d;
+}
+
+/* Adding and coloring a hover bar under nav links, here we used position = absolute in child class, hence we have to use position = relative in parent class */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #e7813d;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Hero Section */
+#hero{
+    background-image: url("IMG/hero.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    /* font-family: ; */
+    font-size: 200%;
+    color: #b8652e;
+    font-family: 'Montserrat', sans-serif;
+}
+#hero h1{
+    color: #f4f4f4;
+}
+
+#hero button{
+    left: 15%;
+    top: 5%;
+}
+
+/* Button */
+.button-57 {
+  padding-left: 100px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000000;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #171616;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 10px;
+}
+
+.button-57 i{
+    scale: 1.5;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: rgb(255, 255, 255);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 10px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #070707;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+  border-left-color: #b8652e;
+  border-right-color: #b8652e;
+  border-top-color: #070707;
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgba(91, 91, 91, 0.575);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px #b8652e19;
+    margin: 15px 0;
+    transition: 0.8s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 10px 10px 50px rgba(184, 101, 46, 0.251)
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des .star{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#product1 .pro .des span{
+    color: #f4f4f486;
+    font-size: 15px;
+}
+
+#product1 h2{
+    color: #f4f4f4;
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    color: #f4f4f486;
+    font-size: 16px;
+    font-weight: 700;   
+}
+
+#product1 .pro .des i{
+    font-size: 14px;
+    color: rgb(243, 138, 25);
+}
+
+#product1 .pro .cart{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    border-radius: 50px;
+    background-color: #f4f4f41d;
+    color: #b8652e; 
+    /* border: 1px solid #e7813d; */
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
+
+#product1 p{
+    color: #b8652e9c;
+    font-weight: 100;
+}
+
+
+
