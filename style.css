@@ -322,6 +322,8 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
 
 #banner h4{
@@ -342,7 +344,7 @@ body {
 }
 
 
-/* Button 2 */
+/* Banner - Button 2 */
 .button-49,
 .button-49:after {
   width: 150px;
@@ -446,3 +448,160 @@ body {
 
 
 
+/* sm-banner */
+
+#sm-banner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #f4f4f4;
+}
+
+#sm-banner h4{
+  color: #f4f4f4;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#sm-banner h2{
+  color: #f4f4f4 ;
+}
+
+#sm-banner span{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("IMG/sm-banner-1.jpg");
+  height: 50vh;
+  min-width: 48%;
+  background-size: cover;
+  background-position: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  padding: 30px;
+}
+
+
+/* sm-banner button*/
+.button-89 {
+  margin-top: 10px;
+  --b: 1px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #ffffff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+#sm-banner .banner-box:hover .button-89{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+#sm-banner .banner-box2{
+  background-image: url("IMG/sm-banner-2.jpg");
+}
+
+#NewsLetter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(IMG/newsletter.jpg);
+  height: 35vh;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 30px; 
+  background-repeat: no-repeat;
+  padding-right: 100px;
+}
+
+#NewsLetter h4{
+  color: #f4f4f4;
+  font-size: 28px;
+}
+
+#NewsLetter p{
+  margin-top: 20px;
+  color: #f4f4f4;
+}
+
+#NewsLetter p span{
+  color: #00b3ff;
+  font-weight: 600;
+}
+
+#NewsLetter input{
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 10px;
+}
+
+
+/* CSS */
+.button-13 {
+  background-color: #ffffff4f;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
+.button-13:hover {
+  background-color: #f7fafa00;
+}
+
+.button-13:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
