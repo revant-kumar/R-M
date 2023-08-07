@@ -534,14 +534,20 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url(IMG/newsletter.jpg);
+  background-image: url(IMG/newsletterfinal.jpg);
   height: 35vh;
   width: 100%;
   margin-top: 100px;
-  margin-bottom: 100px;
   padding: 30px; 
   background-repeat: no-repeat;
   padding-right: 100px;
+}
+
+#NewsLetter .form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 40%;
 }
 
 #NewsLetter h4{
@@ -555,7 +561,7 @@ body {
 }
 
 #NewsLetter p span{
-  color: #00b3ff;
+  color: #00c6c6;
   font-weight: 600;
 }
 
@@ -566,15 +572,15 @@ body {
   width: 100%;
   border: 1px solid transparent;
   outline: none;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 
 /* CSS */
 .button-13 {
-  background-color: #ffffff4f;
+  background-color: #00a8a8bc;
   border: 1px solid #d5d9d9;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
   box-sizing: border-box;
   color: #ffffff;
@@ -591,13 +597,14 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  width: 100px;
-  margin-top: 10px;
-  margin-left: 200px;
+  width: 120px;
+  margin-left: 20px;
+  transition: ease-in 0.2s;
 }
 
 .button-13:hover {
-  background-color: #f7fafa00;
+  background-color: #00a8a8;
+  color: #f4f4f4
 }
 
 .button-13:focus {
@@ -605,3 +612,76 @@ body {
   box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
   outline: 0;
 }
+
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo{
+  margin-bottom: 30px;
+}
+
+footer h4{
+  font-size: 16px;
+  margin-top: 10px;
+  color: #f4f4f4;
+  padding-bottom: 20px;
+}
+
+footer p{
+  font-size: 15px;
+  color: #acacac;
+  margin: 0 0 8px 0;
+}
+
+footer a{
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #acacac;
+}
+
+#copyright p{
+  text-align: center;
+  color: #acacac;
+}
+
+footer .follow{
+  margin-top: 20px;
+}
+
+footer .follow i{
+  padding-right: 4px;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+footer .install .row{
+  margin-bottom: 10px;
+}
+
+footer .install p{
+  margin-bottom: 10px;
+}
+
+footer .install img{
+  cursor: pointer;
+}
+
+footer .install .row img{
+  cursor: pointer;
+}
+
+
+
+
